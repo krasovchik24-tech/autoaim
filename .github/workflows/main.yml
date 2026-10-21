@@ -15,7 +15,8 @@ jobs:
         with:
           gradle-version: 7.4.2
       - run: gradle build
+        working-directory: autoaim
       - uses: actions/upload-artifact@v4
         with:
           name: autoaim-jar
-          path: build/libs/autoaim-1.0.0.jar
+          path: autoaim/build/libs/autoaim-1.0.0.jar
